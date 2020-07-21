@@ -24,7 +24,7 @@ router.post("/", (req, res, next) => {
 });
 
 router.get("/", (req, res, next) => {
-    const { limit, sortby = "id", sortdir = "asc" } = req.query;
+    const { limit = 100, sortby = "id", sortdir = "asc" } = req.query;
 
     db("accounts").orderBy(sortby, sortdir).limit(limit)
         .then(accounts => res.status(200).json(accounts))
