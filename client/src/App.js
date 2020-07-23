@@ -71,8 +71,7 @@ function App() {
       console.log(res.data);
       setAccounts(res.data.map(account => {
         return {
-          id: account.id,
-          name: account.name,
+          ...account,
           budget: formatCurrency(account.budget)
         }
       }));
