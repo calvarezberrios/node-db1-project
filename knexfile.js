@@ -18,7 +18,7 @@ module.exports = {
   production: {
     client: "pg",
     connection: {
-      host: "127.0.0.1", // if the server is not running on your computer provide the network address
+      host: "localhost", // if the server is not running on your computer provide the network address
       database: "northwind", // <-- update
       user: "postgres", // <-- update
       password: "1790", // <-- update
