@@ -19,7 +19,7 @@ module.exports = {
     client: "pg",
     connection: {
       host: "localhost", // if the server is not running on your computer provide the network address
-      database: "northwind", // <-- update
+      database: "postgres", // <-- update
       user: "postgres", // <-- update
       password: "1790", // <-- update
     },

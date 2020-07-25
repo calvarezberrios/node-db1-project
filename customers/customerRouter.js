@@ -1,7 +1,6 @@
 const express = require("express");
 
 const db = require("../data/dbconfig");
-const { orWhereNotExists } = require("../data/dbconfig");
 
 const router = express.Router();
 
